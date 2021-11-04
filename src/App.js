@@ -34,11 +34,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          "{quote}"
-        </p>
-        <p>- {author}</p>
-        <button onClick={switchQuoteAndAuthor}>Change quote</button>
+        <div id='quote-box'>
+          <p id='text'>
+            "{quote}"
+          </p>
+          <p id='author'>- {author}</p>
+          <button id='new-quote' onClick={switchQuoteAndAuthor}>Change quote</button>
+          <a id='tweet-quote' target='_blank' href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)+`&hashtags=quotes`}>Tweet</a>
+        </div>
       </header>
     </div>
   );
