@@ -1,5 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Sora', sans-serif;
+  #quote-box {
+    padding: 30px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 15px;
+    #author {
+      text-align: right;
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-between;
+      #tweet-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 25px;
+        font-family: 'Sora', sans-serif;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        padding: 1%;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+    #new-quote {
+      font-family: 'Sora', sans-serif;
+      font-size: 0.6em;
+      float: right;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
   .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -11,3 +54,4 @@
     color: white;
   }
 }
+
