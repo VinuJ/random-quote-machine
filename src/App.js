@@ -35,15 +35,15 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header" style={{backgroundColor: `${accentColour}`, color: `${accentColour}`, transitionDuration: '1.5s'}}>
+      <header className="App-header" style={{backgroundColor: `${accentColour}`, color: `${accentColour}`, transitionDuration: '1s'}}>
         <div id='quote-box'>
-          <p id='text' style={{transitionDuration: '1.5s'}}>"{quote}"</p>
-          <p id='author' style={{transitionDuration: '1.5s'}}>- {author}</p>
+          <p id='text'>"{quote}"</p>
+          <p id='author'>- {author}</p>
           <div className='buttons'>
-            <a id='tweet-quote' style={{backgroundColor: `${accentColour}`, transitionDuration: '1.5s'}} target='_blank' href=
+            <a id='tweet-quote' style={{backgroundColor: `${accentColour}`, transitionDuration: '1s'}} target='_blank' href=
             {encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} -${author}`)+`&hashtags=quotes`}
             ><FontAwesomeIcon id='twitter-icon' icon={faTwitter}></FontAwesomeIcon></a>
-            <button id='new-quote' style={{backgroundColor: `${accentColour}`, transitionDuration: '1.5s'}} onClick={switchQuote}>New quote</button>
+            <button id='new-quote' style={{backgroundColor: `${accentColour}`, transitionDuration: '1s'}} onClick={switchQuote}>New quote</button>
           </div>
         </div>
       </header>
