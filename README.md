@@ -1,5 +1,5 @@
-Random quote machine for freeCodeCamp.com's front end libraries certification. Built using React and Sass.
+# Random quote machine
 
-https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
+Made for freeCodeCamp.com's front end libraries certification. Built using React and Sass.
 
 DEMO: https://vinuj.github.io/random-quote-machine/
